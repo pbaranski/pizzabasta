@@ -893,9 +893,12 @@ ol.linenums {
 @media (min-width: 1200px) {
     .container-fluid {
         padding-left: 200px;
-        padding-right: 200px;
+        padding-right: 0px;
     }
-
+    .container-fluid-table {
+        width: 970px;
+        padding-left: 200px;
+    }
    .bs-docs-container {
       max-width: 970px;
    }
@@ -939,6 +942,10 @@ ol.linenums {
    body {
       padding-top: 2px;
    }
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
    /* Widen masthead and social buttons to fill body padding */
    .jumbotron {
       margin-top: 20px; /* Offset bottom margin on .navbar */
@@ -960,6 +967,11 @@ ol.linenums {
    body {
       padding-top: 0px;
    }
+
+    .container-fluid {
+             padding-left: 10px;
+             padding-right: 15px;
+         }
 
    /* Widen masthead and social buttons to fill body padding */
    .jumbotron {
@@ -1095,3 +1107,10 @@ ol.linenums {
       float: none;
    }
 }
+
+/*hidding cels of menu table*/
+
+.hideIt{
+    display: none;
+}
+

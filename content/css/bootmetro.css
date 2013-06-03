@@ -2081,9 +2081,12 @@ header h1 {display: inline;}
 
 .table th, .table td {
    border-top: 0;
+   color: yellowgreen;
+}
+.table td {
+   color: #000;
 
 }
-
 
 /* Pagination
 -------------------------------------------------- */

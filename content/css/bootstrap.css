@@ -1896,7 +1896,7 @@ table {
 
 .table th,
 .table td {
-  padding: 8px;
+  padding: 2px;
   line-height: 20px;
   text-align: left;
   vertical-align: top;
@@ -1904,7 +1904,7 @@ table {
 }
 
 .table th {
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .table thead th {

@@ -1,5 +1,8 @@
 /* Metro Tiles
 -------------------------------------------------- */
+.bg-color-white {
+    background-color: #ffffff !important;
+}
 
 .bg-color-blue {
    background-color: #0072BC !important;
@@ -32,6 +35,13 @@
    background-color: #1c1c1c !important;
 }
 
+.bg-color-m70 {
+    background-color: #F5A9A9 !important;
+}
+
+.bg-color-m20 {
+    background-color: #D0A9F5 !important;
+}
 
 
 .metro {

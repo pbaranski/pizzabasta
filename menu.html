@@ -1,0 +1,770 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]>
+<html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta name="viewport" content="width=device-width">
+
+    <title>BootMetro</title>
+
+    <meta name="robots" content="index, nofollow">
+    <meta name="description"
+          content="MetroUI-Web : Simple and complete web UI framework to create web apps with Windows 8 Metro user interface."/>
+    <meta name="keywords"
+          content="metro, metroui, metro-ui, metro ui, windows 8, metro style, bootstrap, framework, web framework, css, html"/>
+    <meta name="author" content="AozoraLabs by Marcello Palmitessa"/>
+
+    <!-- remove or comment this line if you want to use the local fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="content/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="content/css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="content/css/bootmetro.css">
+    <link rel="stylesheet" type="text/css" href="content/css/bootmetro-tiles.css">
+    <link rel="stylesheet" type="text/css" href="content/css/bootmetro-charms.css">
+    <link rel="stylesheet" type="text/css" href="content/css/metro-ui-light.css">
+    <link rel="stylesheet" type="text/css" href="content/css/icomoon.css">
+
+    <!--  these two css are to use only for documentation -->
+    <link rel="stylesheet" type="text/css" href="content/css/demo.css">
+    <link rel="stylesheet" type="text/css" href="scripts/google-code-prettify/prettify.css">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="content/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="content/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="content/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="content/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="content/ico/apple-touch-icon-57-precomposed.png">
+
+    <!-- All JavaScript at the bottom, except for Modernizr and Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+    <script src="scripts/modernizr-2.6.1.min.js"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-3182578-6']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+
+<body data-accent="blue">
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+     chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a
+    different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>
+    to experience this site.</p><![endif]-->
+
+<!--
+<div id="hero" class="container-fluid" xmlns="http://www.w3.org/1999/html">
+   <div class="row-fluid">
+
+      <header class="jumbotron masthead">
+         <div class="inner span5">
+            <h1>BootMetro</h1>
+            <h2>Metro style web framework</h2>
+            <p>Simple and flexible HTML, CSS, and Javascript for web apps that wants to use the "Windows 8 MetroUI" style, without the need to run on Windows 8.</p>
+            <p>
+               <a href="https://github.com/aozora/bootmetro/zipball/master" class="btn btn-large btn-primary btn-success">
+                  Download Now <small>it's free</small>
+                  <b class="icon-arrow-right-7"></b>
+               </a>
+               <br/>
+               <span class="label label-success">Latest version: 0.6</span>
+            </p>
+         </div>
+         <div class="span7">
+            <img id="hero-image" class="pull-right" width="500" height="265" src="content/img/hero4.png" alt="hero">
+         </div>
+      </header>
+
+   </div>
+</div>
+-->
+<!--<div class="wrapx">-->
+<header id="hero" class="">
+    <div class="jumbotron masthead">
+        <div class="container-fluid">
+            <div class="row-fluid">
+
+                <h1><font color="#01a31c">pizza</font><font color="red">basta</font><font color="#01a31c">.pl</font>
+                </h1>
+
+                <h2>pysznie wypieczona</h2>
+
+                <p>codziennie od 13:00 do 22:00</p>
+                <p>
+
+                    <a class="btn btn-mini bg-color-red" href="index.html">
+                        <span class="icon" data-icon="&#xe069;"/>
+                    </a>
+
+                    <a class="btn btn-mini bg-color-green" href="#">
+                        <span class="icon" data-icon="&#x0040;"/>
+                        zamów 500 609 909
+                    </a>
+
+                    <a class="btn btn-mini bg-color-red" href="#">
+                        <span class="icon" data-icon="&#x0078;"/>
+                        dowóz 2 zł
+                    </a>
+
+                    <a class="btn bg-color-blue">
+                        <span class="icon" data-icon="&#x0021;"/>
+                        ul ziętka 59f, brzęczkowice, m-ce
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<div id="home-tiles1" class="container-fluid metro">
+    <div class="row-fluid">
+        <div class="bs-docs-container">
+
+            <a class="tile app bg-color-blue last" href="#">
+                <div class="column-text">
+                    <div class="text-header3">8paragon ów=duża pizza</div>
+                </div>
+                <span class="app-label">minimum 20zł każdy</span>
+            </a>
+
+            <a class="tile app bg-color-red first" onclick="show70();">
+                <div class="column-text">
+                    <div class="text-header3">druga pizza -70%</div>
+                </div>
+                <span class="app-label">codziennie</span>
+            </a>
+
+            <a class="tile app bg-color-purple middle" onclick="show20();">
+                <div class="column-text">
+                    <div class="text-header3">każda pizza -20%</div>
+                </div>
+                <span class="app-label">poniedz, wtor, środ</span>
+            </a>
+
+            <a class="tile app bg-color-greenDark first" onclick="bigSmall();">
+                <div class="column-text">
+                    <div class="text-header3">duża w cenie małej</div>
+                </div>
+                <span class="app-label">czwa, piąt, sob, niedz</span>
+            </a>
+
+            <a class="tile app bg-color-greenDark middle" onclick="bigX();">
+                <div class="column-text">
+                    <div class="text-header3">maxx w cenie dużej</div>
+                </div>
+                <span class="app-label">czwa, piąt, sob, niedz</span>
+            </a>
+
+            <a class="tile app bg-color-pink last" href="#">
+                <div class="column-text">
+                    <div class="text-header3">regulamin promocji</div>
+                </div>
+                <span class="app-label">promocje nie łaczą się</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="home-tiles2" class="container-fluid metro">
+<div class="row-fluid">
+
+    <p>
+
+        <a class="btn btn-mini bg-color-red" href="index.html">
+            <span class="icon" data-icon="&#xe069;"/>
+        </a>
+    </p>
+</div>
+</div>
+
+
+
+<div class="container-fluid-table">
+
+<table class="table table-striped">
+<thead>
+<tr>
+    <th>#</th>
+    <th>pizza</th>
+    <th class="bigSmall1 hideIt">Duża w ce-</br>nie Małej</th>
+    <th class="bigSmall2">mała</br>30cm</th>
+    <th class="m20h hideIt hideIt bg-color-blueDark">-20%</th>
+    <th class="m70h hideIt bg-color-red">-70%</th>
+    <th class="bigX1 hideIt">MAXX w ce-</br>nie Dużej</th>
+    <th class="bigX2">duża</br>40cm</th>
+    <th class="m20h hideIt bg-color-blueDark">-20%</th>
+    <th class="d70h hideIt bg-color-red">-70%</th>
+    <th>maxx</br>50cm</th>
+    <th class="m20h hideIt bg-color-blueDark">-20%</th>
+    <th class="x70h hideIt bg-color-red">-70%</th>
+</tr>
+</thead>
+<tbody>
+<tr id="p1">
+    <td>1</td>
+    <td class="nazwa">MARGHARITA</br>sos pomidorowy, ser mozzarella, oregano</td>
+    <td class="mala">18</td>
+    <td class="m20 hideIt">14,4</td>
+    <td class="m70 hideIt">5,4</td>
+    <td class="duza">25</td>
+    <td class="d20 hideIt">20</td>
+    <td class="d70 hideIt">7,5</td>
+    <td class="maxx">29</td>
+    <td class="x20 hideIt">23,2</td>
+    <td class="x70 hideIt">8,7</td>
+</tr>
+<tr id="p2">
+    <td>2</td>
+    <td class="nazwa">PROSCIUTTO</br>sos pomidorowy, ser mozzarella, szynka, oregano</td>
+    <td class="mala">23</td>
+    <td class="m20 hideIt">18,4</td>
+    <td class="m70 hideIt">6,9</td>
+    <td class="duza">29</td>
+    <td class="d20 hideIt">23,2</td>
+    <td class="d70 hideIt">8,7</td>
+    <td class="maxx">35</td>
+    <td class="x20 hideIt">28</td>
+    <td class="x70 hideIt">10,5</td>
+</tr>
+<tr id="p3">
+    <td>3</td>
+    <td class="nazwa">SALAMI</br>sos pomidorowy, ser mozzarella, salami pepperoni, oregano</td>
+    <td class="mala">23</td>
+    <td class="m20 hideIt">18,4</td>
+    <td class="m70 hideIt">6,9</td>
+    <td class="duza">29</td>
+    <td class="d20 hideIt">23,2</td>
+    <td class="d70 hideIt">8,7</td>
+    <td class="maxx">35</td>
+    <td class="x20 hideIt">28</td>
+    <td class="x70 hideIt">10,5</td>
+</tr>
+<tr id="p4">
+    <td>4</td>
+    <td class="nazwa">PIECZARKOWA</br>sos pomidorowy, ser mozzarella, pieczarki, oregano</td>
+    <td class="mala">23</td>
+    <td class="m20 hideIt">18,4</td>
+    <td class="m70 hideIt">6,9</td>
+    <td class="duza">29</td>
+    <td class="d20 hideIt">23,2</td>
+    <td class="d70 hideIt">8,7</td>
+    <td class="maxx">35</td>
+    <td class="x20 hideIt">28</td>
+    <td class="x70 hideIt">10,5</td>
+</tr>
+<tr id="p5">
+    <td>5</td>
+    <td class="nazwa">HAWAJSKA</br>sos pomidorowy, ser mozzarella, szynka, ananas, oregano</td>
+    <td class="mala">25</td>
+    <td class="m20 hideIt">20</td>
+    <td class="m70 hideIt">7,5</td>
+    <td class="duza">31</td>
+    <td class="d20 hideIt">24,8</td>
+    <td class="d70 hideIt">9,3</td>
+    <td class="maxx">37</td>
+    <td class="x20 hideIt">29,6</td>
+    <td class="x70 hideIt">11,1</td>
+</tr>
+<tr id="p6">
+    <td>6</td>
+    <td class="nazwa">CAPRICIOSA</br>sos pomidorowy, ser mozzarella, szynka, pieczarki, oregano</td>
+    <td class="mala">25</td>
+    <td class="m20 hideIt">20</td>
+    <td class="m70 hideIt">7,5</td>
+    <td class="duza">31</td>
+    <td class="d20 hideIt">24,8</td>
+    <td class="d70 hideIt">9,3</td>
+    <td class="maxx">37</td>
+    <td class="x20 hideIt">29,6</td>
+    <td class="x70 hideIt">11,1</td>
+</tr>
+<tr id="p7">
+    <td>7</td>
+    <td class="nazwa">MISTA</br>sos pomidorowy, ser mozzarella, salami, pieczarki, oregano</td>
+    <td class="mala">25</td>
+    <td class="m20 hideIt">20</td>
+    <td class="m70 hideIt">7,5</td>
+    <td class="duza">31</td>
+    <td class="d20 hideIt">24,8</td>
+    <td class="d70 hideIt">9,3</td>
+    <td class="maxx">39</td>
+    <td class="x20 hideIt">31,2</td>
+    <td class="x70 hideIt">11,7</td>
+</tr>
+<tr id="p8">
+    <td>8</td>
+    <td class="nazwa">PEPERONE</br>sos pomidorowy, ser mozzarella, salami, papryka pepperoni, cebula, oregano</td>
+    <td class="mala">27</td>
+    <td class="m20 hideIt">21,6</td>
+    <td class="m70 hideIt">8,1</td>
+    <td class="duza">33</td>
+    <td class="d20 hideIt">26,4</td>
+    <td class="d70 hideIt">9,9</td>
+    <td class="maxx">39</td>
+    <td class="x20 hideIt">31,2</td>
+    <td class="x70 hideIt">11,7</td>
+</tr>
+<tr id="p9">
+    <td>9</td>
+    <td class="nazwa">MORSKA</br>sos pomidorowy, ser mozzarella, tuńczyk, zielone oliwki, cebula, oregano</td>
+    <td class="mala">27</td>
+    <td class="m20 hideIt">21,6</td>
+    <td class="m70 hideIt">8,1</td>
+    <td class="duza">33</td>
+    <td class="d20 hideIt">26,4</td>
+    <td class="d70 hideIt">9,9</td>
+    <td class="maxx">39</td>
+    <td class="x20 hideIt">31,2</td>
+    <td class="x70 hideIt">11,7</td>
+</tr>
+<tr id="p10">
+    <td>10</td>
+    <td class="nazwa">BENDARE</br>sos pomidorowy, ser mozzarella, bekon, pieczarki, ogórek konserwowy, cebula, oregano
+    </td>
+    <td class="mala">27</td>
+    <td class="m20 hideIt">21,6</td>
+    <td class="m70 hideIt">8,1</td>
+    <td class="duza">33</td>
+    <td class="d20 hideIt">26,4</td>
+    <td class="d70 hideIt">9,9</td>
+    <td class="maxx">41</td>
+    <td class="x20 hideIt">32,8</td>
+    <td class="x70 hideIt">12,3</td>
+</tr>
+<tr id="p11">
+    <td>11</td>
+    <td class="nazwa">KURCZAK BROCCOLI</br>sos pomidorowy, ser mozzarella, kurczak, brokuły, zielony groszek, cebula,
+        oregano
+    </td>
+    <td class="mala">29</td>
+    <td class="m20 hideIt">23,2</td>
+    <td class="m70 hideIt">8,7</td>
+    <td class="duza">35</td>
+    <td class="d20 hideIt">28</td>
+    <td class="d70 hideIt">10,5</td>
+    <td class="maxx">41</td>
+    <td class="x20 hideIt">32,8</td>
+    <td class="x70 hideIt">12,3</td>
+</tr>
+<tr id="p12">
+    <td>12</td>
+    <td class="nazwa">SZEFOWEJ</br>sos pomidorowy, ser mozzarella, szynka, kukurydza, brokuły, cebula, oregano</td>
+    <td class="mala">29</td>
+    <td class="m20 hideIt">23,2</td>
+    <td class="m70 hideIt">8,7</td>
+    <td class="duza">35</td>
+    <td class="d20 hideIt">28</td>
+    <td class="d70 hideIt">10,5</td>
+    <td class="maxx">41</td>
+    <td class="x20 hideIt">32,8</td>
+    <td class="x70 hideIt">12,3</td>
+</tr>
+<tr id="p13">
+    <td>13</td>
+    <td class="nazwa">TROPIKALNA</br>sos pomidorowy, ser mozzarella, kurczak, ananas, kukurydza, oregano</td>
+    <td class="mala">29</td>
+    <td class="m20 hideIt">23,2</td>
+    <td class="m70 hideIt">8,7</td>
+    <td class="duza">35</td>
+    <td class="d20 hideIt">28</td>
+    <td class="d70 hideIt">10,5</td>
+    <td class="maxx">41</td>
+    <td class="x20 hideIt">32,8</td>
+    <td class="x70 hideIt">12,3</td>
+</tr>
+<tr id="p14">
+    <td>14</td>
+    <td class="nazwa">SWOJSKA</br>sos pomidorowy, ser mozzarella, kiełbasa, pieczarki, papryka, cebula, oregano</td>
+    <td class="mala">29</td>
+    <td class="m20 hideIt">23,2</td>
+    <td class="m70 hideIt">8,7</td>
+    <td class="duza">35</td>
+    <td class="d20 hideIt">28</td>
+    <td class="d70 hideIt">10,5</td>
+    <td class="maxx">41</td>
+    <td class="x20 hideIt">32,8</td>
+    <td class="x70 hideIt">12,3</td>
+</tr>
+<tr id="p15">
+    <td>15</td>
+    <td class="nazwa">TURECKA</br>sos pomidorowy, ser mozzarella, kebab, pomidor, kukurydza, cebula, oregano</td>
+    <td class="mala">29</td>
+    <td class="m20 hideIt">23,2</td>
+    <td class="m70 hideIt">8,7</td>
+    <td class="duza">35</td>
+    <td class="d20 hideIt">28</td>
+    <td class="d70 hideIt">10,5</td>
+    <td class="maxx">41</td>
+    <td class="x20 hideIt">32,8</td>
+    <td class="x70 hideIt">12,3</td>
+</tr>
+<tr id="p16">
+    <td>16</td>
+    <td class="nazwa">QUATRO STADION</br>sos pomidorowy, ser mozzarella, szynka, salami, pieczarki, papryka, oregano
+    </td>
+    <td class="mala">29</td>
+    <td class="m20 hideIt">23,2</td>
+    <td class="m70 hideIt">8,7</td>
+    <td class="duza">35</td>
+    <td class="d20 hideIt">28</td>
+    <td class="d70 hideIt">10,5</td>
+    <td class="maxx">41</td>
+    <td class="x20 hideIt">32,8</td>
+    <td class="x70 hideIt">12,3</td>
+</tr>
+<tr id="p17">
+    <td>17</td>
+    <td class="nazwa">KURCZAK BARBEQUE</br>sos barbeque, ser mozzarella, kurczak, oscypek, kukurydza cebula, oregano
+    </td>
+    <td class="mala">29</td>
+    <td class="m20 hideIt">23,2</td>
+    <td class="m70 hideIt">8,7</td>
+    <td class="duza">35</td>
+    <td class="d20 hideIt">28</td>
+    <td class="d70 hideIt">10,5</td>
+    <td class="maxx">41</td>
+    <td class="x20 hideIt">32,8</td>
+    <td class="x70 hideIt">12,3</td>
+</tr>
+<tr id="p18">
+    <td>18</td>
+    <td class="nazwa">WEGETARIAŃSKA</br>sos pomidorowy, ser mozzarella, pieczarki, kukurydza, mieszane oliwki, cebula,
+        brokuły, oregano
+    </td>
+    <td class="mala">30</td>
+    <td class="m20 hideIt">24</td>
+    <td class="m70 hideIt">9</td>
+    <td class="duza">37</td>
+    <td class="d20 hideIt">29,6</td>
+    <td class="d70 hideIt">11,1</td>
+    <td class="maxx">42</td>
+    <td class="x20 hideIt">33,6</td>
+    <td class="x70 hideIt">12,6</td>
+</tr>
+<tr id="p19">
+    <td>19</td>
+    <td class="nazwa">ALPEJSKA</br>sos śmietanowy, ser mozzarella, kurczak, brokuły, ser feta, cebula, oregano</td>
+    <td class="mala">30</td>
+    <td class="m20 hideIt">24</td>
+    <td class="m70 hideIt">9</td>
+    <td class="duza">37</td>
+    <td class="d20 hideIt">29,6</td>
+    <td class="d70 hideIt">11,1</td>
+    <td class="maxx">42</td>
+    <td class="x20 hideIt">33,6</td>
+    <td class="x70 hideIt">12,6</td>
+</tr>
+<tr id="p20">
+    <td>20</td>
+    <td class="nazwa">MEKSYKAŃSKA</br>sos pomidorowy, ser mozzarella, bekon, wołowina, czerwona fasola, papryka
+        pepperoni, oregano
+    </td>
+    <td class="mala">30</td>
+    <td class="m20 hideIt">24</td>
+    <td class="m70 hideIt">9</td>
+    <td class="duza">37</td>
+    <td class="d20 hideIt">29,6</td>
+    <td class="d70 hideIt">11,1</td>
+    <td class="maxx">42</td>
+    <td class="x20 hideIt">33,6</td>
+    <td class="x70 hideIt">12,6</td>
+</tr>
+<tr id="p21">
+    <td>21</td>
+    <td class="nazwa">ŚNIADANIOWA</br>sos pomidorowy, ser mozzarella, szynka, bekon, pieczarki, jajka, cebula, oregano
+    </td>
+    <td class="mala">30</td>
+    <td class="m20 hideIt">24</td>
+    <td class="m70 hideIt">9</td>
+    <td class="duza">37</td>
+    <td class="d20 hideIt">29,6</td>
+    <td class="d70 hideIt">11,1</td>
+    <td class="maxx">42</td>
+    <td class="x20 hideIt">33,6</td>
+    <td class="x70 hideIt">12,6</td>
+</tr>
+<tr id="p22">
+    <td>22</td>
+    <td class="nazwa">WIEJSKA</br>sos pomidorowy, ser mozzarella, bekon, pieczarki, papryka, kukurydza, cebula,
+        oregano
+    </td>
+    <td class="mala">30</td>
+    <td class="m20 hideIt">24</td>
+    <td class="m70 hideIt">9</td>
+    <td class="duza">37</td>
+    <td class="d20 hideIt">29,6</td>
+    <td class="d70 hideIt">11,1</td>
+    <td class="maxx">42</td>
+    <td class="x20 hideIt">33,6</td>
+    <td class="x70 hideIt">12,6</td>
+</tr>
+<tr id="p23">
+    <td>23</td>
+    <td class="nazwa">FARMERSKA</br>sos pomidorowy, ser mozzarella, szynka, kurczak, pieczarki, kukurydza, oregano</td>
+    <td class="mala">30</td>
+    <td class="m20 hideIt">24</td>
+    <td class="m70 hideIt">9</td>
+    <td class="duza">37</td>
+    <td class="d20 hideIt">29,6</td>
+    <td class="d70 hideIt">11,1</td>
+    <td class="maxx">42</td>
+    <td class="x20 hideIt">33,6</td>
+    <td class="x70 hideIt">12,6</td>
+</tr>
+<tr id="p24">
+    <td>24</td>
+    <td class="nazwa">MAFIJNA</br>sos pomidorowy, ser mozzarella, szynka, bekon, wołowina, cebula, papryka pepperoni,
+        oregano
+    </td>
+    <td class="mala">32</td>
+    <td class="m20 hideIt">25,6</td>
+    <td class="m70 hideIt">9,6</td>
+    <td class="duza">38</td>
+    <td class="d20 hideIt">30,4</td>
+    <td class="d70 hideIt">11,4</td>
+    <td class="maxx">43</td>
+    <td class="x20 hideIt">34,4</td>
+    <td class="x70 hideIt">12,9</td>
+</tr>
+<tr id="p25">
+    <td>25</td>
+    <td class="nazwa">KEBABOWA</br>sos pomidorowy, ser mozzarella, bekon, kebab, papryka, kukurydza, cebula, oregano
+    </td>
+    <td class="mala">32</td>
+    <td class="m20 hideIt">25,6</td>
+    <td class="m70 hideIt">9,6</td>
+    <td class="duza">38</td>
+    <td class="d20 hideIt">30,4</td>
+    <td class="d70 hideIt">11,4</td>
+    <td class="maxx">43</td>
+    <td class="x20 hideIt">34,4</td>
+    <td class="x70 hideIt">12,9</td>
+</tr>
+<tr id="p26">
+    <td>26</td>
+    <td class="nazwa">CZTERY SERY</br>sos pomidorowy, ser mozzarella, oscypek, ser pleśniowy, gouda, oregano</td>
+    <td class="mala">32</td>
+    <td class="m20 hideIt">25,6</td>
+    <td class="m70 hideIt">9,6</td>
+    <td class="duza">38</td>
+    <td class="d20 hideIt">30,4</td>
+    <td class="d70 hideIt">11,4</td>
+    <td class="maxx">43</td>
+    <td class="x20 hideIt">34,4</td>
+    <td class="x70 hideIt">12,9</td>
+</tr>
+<tr id="p27">
+    <td>27</td>
+    <td class="nazwa">OWOCE MORZA</br>sos pomidorowy, ser mozzarella, mieszanka frutti di mare, oregano</td>
+    <td class="mala">32</td>
+    <td class="m20 hideIt">25,6</td>
+    <td class="m70 hideIt">9,6</td>
+    <td class="duza">38</td>
+    <td class="d20 hideIt">30,4</td>
+    <td class="d70 hideIt">11,4</td>
+    <td class="maxx">43</td>
+    <td class="x20 hideIt">34,4</td>
+    <td class="x70 hideIt">12,9</td>
+</tr>
+<tr id="p28">
+    <td>28</td>
+    <td class="nazwa">RODZINNA</br>sos pomidorowy, ser mozzarella, szynka, bekon, pieczarki, papryka, cebula oregano
+    </td>
+    <td class="mala">32</td>
+    <td class="m20 hideIt">25,6</td>
+    <td class="m70 hideIt">9,6</td>
+    <td class="duza">38</td>
+    <td class="d20 hideIt">30,4</td>
+    <td class="d70 hideIt">11,4</td>
+    <td class="maxx">43</td>
+    <td class="x20 hideIt">34,4</td>
+    <td class="x70 hideIt">12,9</td>
+</tr>
+<tr id="p29">
+    <td>29</td>
+    <td class="nazwa">DIABELSKA</br>sos pomidorowy, ser mozzarella, szynka, bekon, salami, papryka pepperoni, czosnek,
+        cebula, oregano
+    </td>
+    <td class="mala">32</td>
+    <td class="m20 hideIt">25,6</td>
+    <td class="m70 hideIt">9,6</td>
+    <td class="duza">38</td>
+    <td class="d20 hideIt">30,4</td>
+    <td class="d70 hideIt">11,4</td>
+    <td class="maxx">43</td>
+    <td class="x20 hideIt">34,4</td>
+    <td class="x70 hideIt">12,9</td>
+</tr>
+<tr id="p30">
+    <td>30</td>
+    <td class="nazwa">CHŁOPSKA</br>sos pomidorowy, ser mozzarella, bekon, kiełbasa, wołowina, pieczarki, cebula,
+        oregano
+    </td>
+    <td class="mala">32</td>
+    <td class="m20 hideIt">25,6</td>
+    <td class="m70 hideIt">9,6</td>
+    <td class="duza">38</td>
+    <td class="d20 hideIt">30,4</td>
+    <td class="d70 hideIt">11,4</td>
+    <td class="maxx">43</td>
+    <td class="x20 hideIt">34,4</td>
+    <td class="x70 hideIt">12,9</td>
+</tr>
+<tr id="p31">
+    <td>31</td>
+    <td class="nazwa">O SOLE MIO</br>sos śmietanowy, ser mozzarella, bekon, szynka, brokuły, jajka, cebula, oregano</td>
+    <td class="mala">32</td>
+    <td class="m20 hideIt">25,6</td>
+    <td class="m70 hideIt">9,6</td>
+    <td class="duza">38</td>
+    <td class="d20 hideIt">30,4</td>
+    <td class="d70 hideIt">11,4</td>
+    <td class="maxx">43</td>
+    <td class="x20 hideIt">34,4</td>
+    <td class="x70 hideIt">12,9</td>
+</tr>
+<tr id="p32">
+    <td>32</td>
+    <td class="nazwa">CARBONARA</br>sos śmietanowy, ser mozzarella, bekon, salami, pieczarki, cebula, czosnek, oregano
+    </td>
+    <td class="mala">32</td>
+    <td class="m20 hideIt">25,6</td>
+    <td class="m70 hideIt">9,6</td>
+    <td class="duza">38</td>
+    <td class="d20 hideIt">30,4</td>
+    <td class="d70 hideIt">11,4</td>
+    <td class="maxx">43</td>
+    <td class="x20 hideIt">34,4</td>
+    <td class="x70 hideIt">12,9</td>
+</tr>
+<tr id="p33">
+    <td>33</td>
+    <td class="nazwa">FIRMOWA</br>sos pomidorowy, ser mozzarella, bekon, salami, pomidory, papryka, cebula, czosnek,
+        oregano
+    </td>
+    <td class="mala">32</td>
+    <td class="m20 hideIt">25,6</td>
+    <td class="m70 hideIt">9,6</td>
+    <td class="duza">38</td>
+    <td class="d20 hideIt">30,4</td>
+    <td class="d70 hideIt">11,4</td>
+    <td class="maxx">43</td>
+    <td class="x20 hideIt">34,4</td>
+    <td class="x70 hideIt">12,9</td>
+</tr>
+<tr id="p34">
+    <td>34</td>
+    <td class="nazwa">ZBÓJNICKA</br>sos pomidorowy, ser mozzarella, wołowina, bekon, oscypek, papryka, oregano,</td>
+    <td class="mala">32</td>
+    <td class="m20 hideIt">25,6</td>
+    <td class="m70 hideIt">9,6</td>
+    <td class="duza">38</td>
+    <td class="d20 hideIt">30,4</td>
+    <td class="d70 hideIt">11,4</td>
+    <td class="maxx">43</td>
+    <td class="x20 hideIt">34,4</td>
+    <td class="x70 hideIt">12,9</td>
+</tr>
+<tr id="p35">
+    <td>35</td>
+    <td class="nazwa">GÓRALSKA</br>sos pomidorowy, ser mozzarella, bekon, oscypek, pomidor, cebula, oregano</td>
+    <td class="mala">32</td>
+    <td class="m20 hideIt">25,6</td>
+    <td class="m70 hideIt">9,6</td>
+    <td class="duza">38</td>
+    <td class="d20 hideIt">30,4</td>
+    <td class="d70 hideIt">11,4</td>
+    <td class="maxx">43</td>
+    <td class="x20 hideIt">34,4</td>
+    <td class="x70 hideIt">12,9</td>
+</tr>
+<tr id="p36">
+    <td>36</td>
+    <td class="nazwa">KOLORADO</br>sos śmietanowy, ser mozzarella, bekon, wołowina, kurczak, pieczarki, cebula,
+        oregano
+    </td>
+    <td class="mala">33</td>
+    <td class="m20 hideIt">26,4</td>
+    <td class="m70 hideIt">9,9</td>
+    <td class="duza">39</td>
+    <td class="d20 hideIt">31,2</td>
+    <td class="d70 hideIt">11,7</td>
+    <td class="maxx">44</td>
+    <td class="x20 hideIt">35,2</td>
+    <td class="x70 hideIt">13,2</td>
+</tr>
+<tr id="p37">
+    <td>37</td>
+    <td class="nazwa">BARBADOS</br>sos barbeque, ser mozzarella, salami, kurczak, kiełbasa, cebula , czosnek, oregano
+    </td>
+    <td class="mala">33</td>
+    <td class="m20 hideIt">26,4</td>
+    <td class="m70 hideIt">9,9</td>
+    <td class="duza">39</td>
+    <td class="d20 hideIt">31,2</td>
+    <td class="d70 hideIt">11,7</td>
+    <td class="maxx">44</td>
+    <td class="x20 hideIt">35,2</td>
+    <td class="x70 hideIt">13,2</td>
+</tr>
+<tr id="p38">
+    <td>38</td>
+    <td class="nazwa">TEKSAŃSKA</br>sos barbeque, ser mozzarella, bekon, wołowina, salami, pieczarki, papryka, cebula,
+        oregano
+    </td>
+    <td class="mala">33</td>
+    <td class="m20 hideIt">26,4</td>
+    <td class="m70 hideIt">9,9</td>
+    <td class="duza">39</td>
+    <td class="d20 hideIt">31,2</td>
+    <td class="d70 hideIt">11,7</td>
+    <td class="maxx">44</td>
+    <td class="x20 hideIt">35,2</td>
+    <td class="x70 hideIt">13,2</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='scripts/jquery-1.8.2.min.js'>\x3C/script>")</script>
+
+<script type="text/javascript" src="scripts/google-code-prettify/prettify.js"></script>
+<script type="text/javascript" src="scripts/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/bootmetro.js"></script>
+<script type="text/javascript" src="scripts/bootmetro-charms.js"></script>
+<script type="text/javascript" src="scripts/demo.js"></script>
+<script type="text/javascript" src="scripts/holder.js"></script>
+<script type="text/javascript" src="scripts/pizza.js"></script>
+
+<script type="text/javascript">
+    $(".metro").metro();
+</script>
+</body>
+</html>
