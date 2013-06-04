@@ -347,7 +347,7 @@ Link colors.
    color: rgba(255, 255, 255, 0.4);
 }
 a {
-   color: rgb(79, 26, 203);
+   color: rgb(100, 100, 100);
 }
 a:hover:active {
    color: rgba(79, 26, 203, 0.6);

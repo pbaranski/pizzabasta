@@ -101,3 +101,11 @@ window.bigX = function () {
     }
 }
 
+function ScrollPage() {
+
+    var pageHeight = document.body.scrollHeight;
+
+    window.scrollTo(0, pageHeight/2)
+
+}
+
