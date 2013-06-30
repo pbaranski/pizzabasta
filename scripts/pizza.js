@@ -23,6 +23,8 @@ window.show70 = function () {
         d70.addClass("bg-color-m70");
         x70.addClass("bg-color-m70");
 
+        scrollTo();
+
     } else {
 
         m70.addClass("hideIt");
@@ -56,6 +58,8 @@ window.show20 = function () {
         d20.addClass("bg-color-m20");
         x20.addClass("bg-color-m20");
 
+        scrollTo();
+
     } else {
 
         m20.addClass("hideIt");
@@ -75,6 +79,7 @@ window.bigSmall = function () {
     if (bigSmall1.hasClass("hideIt")) {
        bigSmall1.removeClass("hideIt");
        bigSmall2.addClass("hideIt");
+        scrollTo();
 
     }else{
         bigSmall2.removeClass("hideIt");
@@ -92,6 +97,7 @@ window.bigX = function () {
     if (bigX1.hasClass("hideIt")) {
         bigX1.removeClass("hideIt");
         bigX2.addClass("hideIt");
+        scrollTo();
 
     }else{
         bigX2.removeClass("hideIt");
@@ -101,11 +107,12 @@ window.bigX = function () {
     }
 }
 
-function ScrollPage() {
 
-    var pageHeight = document.body.scrollHeight;
+window.scrollTo = function () {
 
-    window.scrollTo(0, pageHeight/2)
+    $('html, body').animate({
+        scrollTop: $("#scrollo").offset().top
+    }, 500);
 
 }
 
